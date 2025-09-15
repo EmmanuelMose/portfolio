@@ -2,6 +2,7 @@ import Footer from "../Components/Footer/Footer"
 import Navbar from "../Components/Navbar/Navbar"
 import Hero from "../Components/Hero/Hero"
 import Contact from "../Components/Contact/Contact"
+import Projects from "../Components/Projects/Projects"
 
 
 const LandingPage = () => {
@@ -9,6 +10,7 @@ const LandingPage = () => {
     <div>
         <Navbar/>
         <Hero/>
+        <Projects/>
         <Contact/>
         <Footer/>
         

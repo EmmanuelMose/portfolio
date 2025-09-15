@@ -29,7 +29,10 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 200;
-  background: rgba(0, 0, 0, 0.9); /* deeper background */
+  background: #333;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 .navbar .logo {

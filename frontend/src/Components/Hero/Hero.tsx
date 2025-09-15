@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section className="home" id="home">
       <div className="home-info">
-        <h1>Hi, It's Emmanuel😊</h1>
+        <h1>Hi, It's Emmanuel 😊</h1>
         <h2>
           I'm a{" "}
           <span style={{ ["--i" as any]: 4 }} data-text="Frontend Developer">
@@ -22,11 +22,12 @@ const Hero: React.FC = () => {
           </span>
         </h2>
         <p>
-          I am a computer science student at Masinde Muliro University, passionate
-          about technology and innovation. I am focused on both frontend and
-          backend development. I am also skilled in computing fields such as data
-          science, machine learning, artificial intelligence, data analysis, and
-          cybersecurity. My aim is to transform the world through technology.
+          I am a computer science student at Masinde Muliro University,
+          passionate about technology and innovation. I am focused on both
+          frontend and backend development. I am also skilled in computing
+          fields such as data science, machine learning, artificial intelligence,
+          data analysis, and cybersecurity. My aim is to transform the world
+          through technology.
         </p>
         <div className="btn-sci">
           <a
@@ -40,7 +41,7 @@ const Hero: React.FC = () => {
             <a href="https://github.com/.">
               <i className="bx bxl-github"></i>
             </a>
-            <a href="">
+            <a href="#">
               <i className="bx bxl-linkedin"></i>
             </a>
             <a href="https://x.com/home">
@@ -52,6 +53,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+
       <div className="home-img">
         <div className="img-box">
           <div className="img-item">

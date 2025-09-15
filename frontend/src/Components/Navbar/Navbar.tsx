@@ -38,6 +38,9 @@ const Navbar: React.FC = () => {
         <li>
           <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
         </li>
+        <li>
+          <a href="Certifications" onClick={() => setIsOpen(false)}>Certifications</a>
+        </li>
       </ul>
     </nav>
   );
