@@ -1,4 +1,4 @@
-/* Home Section */
+/* Hero / Home Section */
 .home {
   display: flex;
   align-items: center;
@@ -6,8 +6,8 @@
   height: 100vh;
   padding: 60px 9% 0;
   color: white;
-  
-
+  visibility: hidden;
+  opacity: 0;
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.6s;
 }
@@ -143,7 +143,36 @@
   background: transparent;
 }
 
-/* Responsive home */
+/* Animations */
+@keyframes show-content {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes display-text {
+  25%, 100% {
+    display: none;
+  }
+}
+
+@keyframes fill-text {
+  10%, 100% {
+    width: 0%;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+
+@keyframes rotate-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
 @media (max-width: 992px) {
   .home {
     flex-direction: column;
@@ -152,12 +181,12 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
-
+  
   .home-info {
     padding-right: 0;
     margin-bottom: 40px;
   }
-
+  
   .home-img .img-box {
     width: 50vw;
     height: 50vw;

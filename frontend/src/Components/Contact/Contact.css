@@ -1,0 +1,95 @@
+/* Contact Section */
+.contact-section {
+  padding: 60px 9% 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  width: 50%;
+  background-color: green;
+  padding: 20px;
+  border-radius: 8px;
+  color: black;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+label {
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 15px;
+}
+
+.button-container button#whatsapp-btn {
+  padding: 0 10px;
+}
+
+.button-container button i.bx {
+  margin-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-box {
+    width: 100%;
+    padding: 10px;
+  }
+}

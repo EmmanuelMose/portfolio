@@ -1,24 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  padding: 25px 5%;
+  padding: 20px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
-  background: rgba(0, 0, 0, 0.5);
-  
-  
-  animation: show-content 1.5s linear forwards;
-  animation-delay: 1.6s;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.9); /* deeper background */
 }
 
 .navbar .logo {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 20px; /* smaller size */
+  font-weight: 1000;
 }
 
 .navbar ul {
@@ -27,46 +43,55 @@
 }
 
 .navbar ul li {
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 .navbar ul li a {
-  font-size: 20px;
+  font-size: 15px; /* reduced text size */
   font-weight: 500;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .navbar ul li:hover a,
 .navbar ul li.active a {
-  color: lightgreen;
+  color: blue;
 }
 
+/* Menu Toggle */
 .menu-toggle {
   display: none;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
-  color: lightgreen;
+  color: white;
+  z-index: 300;
 }
 
-/* Responsive navbar */
+/* Responsive */
 @media (max-width: 992px) {
   .navbar ul {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%; /* hidden initially */
+    height: 400px;
+    width: 50%;
+    background: lightblue;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 75px;
-    left: 0;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
   }
 
   .navbar ul.active {
-    display: flex;
+    right: 0; /* slide in from right */
   }
 
   .navbar ul li {
-    margin: 10px 0;
+    margin: 20px 0;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
   }
 
   .menu-toggle {
@@ -76,11 +101,14 @@
 
 @media (max-width: 576px) {
   .navbar {
-    flex-direction: row;
     padding: 15px 5%;
   }
 
-  .logo {
-    margin-bottom: 0;
+  .navbar ul {
+    width: 80%; /* narrower on very small screens */
+  }
+
+  .navbar .logo {
+    font-size: 20px;
   }
 }

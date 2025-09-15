@@ -1,32 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Navbar/Navbar.css";
 
 const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
       <a href="#" className="logo">
         My Portfolio.
       </a>
-      <div className="menu-toggle" id="menu-toggle">
-        <i className="bx bx-menu"></i>
+
+      {/* Menu Toggle Button */}
+      <div className="menu-toggle" onClick={toggleMenu}>
+        <i className={isOpen ? "bx bx-x" : "bx bx-menu"}></i>
       </div>
-      <ul className="nav-menu" id="nav-menu">
+
+      {/* Nav Menu */}
+      <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
         </li>
         <li>
-          <a href="https://github.com/">ViewWorks</a>
+          <a href="https://github.com/" onClick={() => setIsOpen(false)}>Projects</a>
         </li>
         <li>
-          <a href="#contact">HireMe</a>
+          <a href="#contact" onClick={() => setIsOpen(false)}>Hire</a>
         </li>
         <li>
-          <a href="Emmanuel_cv.pdf" download>
+          <a href="Emmanuel_cv.pdf" download onClick={() => setIsOpen(false)}>
             Resume
           </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
         </li>
       </ul>
     </nav>
