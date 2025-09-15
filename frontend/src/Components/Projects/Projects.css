@@ -8,7 +8,7 @@
 }
 
 .projects-box {
-  width: 100%;
+  width: 1200px;
   max-width: 1100px;
   background: #fff;
   padding: 30px;
@@ -20,14 +20,14 @@
 .projects-title {
   font-size: 28px;
   font-weight: 700;
-  color: blue;
+  color: black;
   margin-bottom: 10px;
 }
 
 .projects-label {
   font-size: 16px;
   margin-bottom: 30px;
-  color: #444;
+  color: green;
 }
 
 /* Project Cards */
@@ -39,7 +39,7 @@
 }
 
 .project-card {
-  background: #fafafa;
+  background: #333;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
@@ -54,7 +54,7 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #222;
+  color: blue;
 }
 
 .project-img {
@@ -67,7 +67,7 @@
 
 .project-desc {
   font-size: 14px;
-  color: #555;
+  color: white;
   margin-bottom: 15px;
   line-height: 1.4;
 }
