@@ -1,5 +1,7 @@
 import React from "react";
 import "../Hero/Hero.css";
+import homeimg from "../../assets/Images/homeimg.jpg";
+import EmmanuelCV from "../../assets/EmmanuelCV.pdf";
 
 const Hero: React.FC = () => {
   return (
@@ -31,8 +33,8 @@ const Hero: React.FC = () => {
         </p>
         <div className="btn-sci">
           <a
-            href="Emmanuel_cv.pdf"
-            download="Emmanuel_cv(2).pdf"
+            href={EmmanuelCV}
+            download="EmmanuelCV.pdf"
             className="btn"
           >
             Download CV
@@ -57,7 +59,7 @@ const Hero: React.FC = () => {
       <div className="home-img">
         <div className="img-box">
           <div className="img-item">
-            <img src="emmanuel.jpg.jpg" alt="Emmanuel" />
+            <img src={homeimg} alt="Emmanuel" />
           </div>
         </div>
       </div>

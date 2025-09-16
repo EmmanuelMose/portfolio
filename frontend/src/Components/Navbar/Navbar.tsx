@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.css";
-
+import EmmanuelResume from "../../assets/EmmanuelResume.pdf"
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,16 +22,16 @@ const Navbar: React.FC = () => {
       {/* Nav Menu */}
       <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="https://www.google.com/" onClick={() => setIsOpen(false)}>Home</a>
         </li>
         <li>
-          <a href="https://github.com/" onClick={() => setIsOpen(false)}>Projects</a>
+          <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
         </li>
         <li>
           <a href="#contact" onClick={() => setIsOpen(false)}>Hire</a>
         </li>
         <li>
-          <a href="Emmanuel_cv.pdf" download onClick={() => setIsOpen(false)}>
+          <a href={EmmanuelResume} download onClick={() => setIsOpen(false)}>
             Resume
           </a>
         </li>
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
         </li>
         <li>
-          <a href="Certifications" onClick={() => setIsOpen(false)}>Certifications</a>
+          <a href="https://drive.google.com/drive/folders/1UiZ7Md3j8rLIrvCivexelynvY86hlfU9" onClick={() => setIsOpen(false)}>Certifications</a>
         </li>
       </ul>
     </nav>

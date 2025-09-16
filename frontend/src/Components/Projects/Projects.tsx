@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import homeimg from "../../assets/Images/homeimg.jpg"
 
 const Projects: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <h3 className="project-name">VelvetStay</h3>
             <img
-              src="https://via.placeholder.com/300x180"
+              src={homeimg}
               alt="VelvetStay project"
               className="project-img"
             />
@@ -27,7 +28,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <h3 className="project-name">MediLab</h3>
             <img
-              src="https://via.placeholder.com/300x180"
+              src={homeimg}
               alt="MediLab project"
               className="project-img"
             />
@@ -42,7 +43,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <h3 className="project-name">EventFastisha</h3>
             <img
-              src="https://via.placeholder.com/300x180"
+              src={homeimg}
               alt="EventFastisha project"
               className="project-img"
             />
