@@ -1,6 +1,9 @@
 import React from "react";
 import "./Projects.css";
-import homeimg from "../../assets/Images/homeimg.jpg"
+import hotel from "../../assets/Images/hotel.png";
+import event from "../../assets/Images/event.png";
+import medilab from "../../assets/Images/medilab.png"
+
 
 const Projects: React.FC = () => {
   return (
@@ -14,7 +17,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <h3 className="project-name">VelvetStay</h3>
             <img
-              src={homeimg}
+              src={hotel}
               alt="VelvetStay project"
               className="project-img"
             />
@@ -28,7 +31,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <h3 className="project-name">MediLab</h3>
             <img
-              src={homeimg}
+              src={medilab}
               alt="MediLab project"
               className="project-img"
             />
@@ -43,7 +46,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <h3 className="project-name">EventFastisha</h3>
             <img
-              src={homeimg}
+              src={event}
               alt="EventFastisha project"
               className="project-img"
             />
