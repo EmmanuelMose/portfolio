@@ -2,14 +2,13 @@
 footer {
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 100%;
+  margin: 20px;
+  width: calc(100% - 40px);
   border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 255, 0, 0.25); /* green glow */
 }
 
 .footer-content {
@@ -21,21 +20,63 @@ footer {
 .footer-icons {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
   flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .footer-icons a {
-  margin: 10px;
   display: inline-block;
   font-size: 30px;
+  transition: transform 0.3s ease;
 }
 
 .footer-icons a i {
   color: white;
-  transition: 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .footer-icons a:hover i {
   color: lightgreen;
+  transform: scale(1.2);
+}
+
+/* Rights text */
+.footer-rights {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 500;
+}
+
+/* Responsive - Small Tablets & Phones */
+@media (max-width: 768px) {
+  .footer-icons {
+    gap: 8px;
+  }
+
+  .footer-icons a {
+    font-size: 24px; /* smaller icons */
+  }
+
+  .footer-rights {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .footer-icons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+  }
+
+  .footer-icons a {
+    font-size: 22px; /* fits in one line */
+  }
+
+  .footer-rights {
+    font-size: 12px;
+  }
 }

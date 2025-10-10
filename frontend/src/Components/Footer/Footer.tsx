@@ -34,6 +34,11 @@ const Footer: React.FC = () => {
             <i className="bx bxl-linkedin"></i>
           </a>
         </div>
+
+        {/* Rights Text */}
+        <p className="footer-rights">
+          All rights reserved © EmmanuelMose 2025
+        </p>
       </div>
     </footer>
   );

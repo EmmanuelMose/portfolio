@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   return (
     <section className="home" id="home">
       <div className="home-info">
-        <h1>Hi, It's Emmanuel 😊</h1>
+        <h1>Hi, It's Emmanuel Guru 😊</h1>
         <h2>
           I'm a{" "}
           <span style={{ ["--i" as any]: 4 }} data-text="Frontend Developer">
@@ -25,11 +25,11 @@ const Hero: React.FC = () => {
         </h2>
         <p>
           I am a computer science student at Masinde Muliro University,
-          passionate about technology and innovation. I am focused on both
-          frontend and backend development. I am also skilled in computing
-          fields such as data science, machine learning, artificial intelligence,
-          data analysis, and cybersecurity. My aim is to transform the world
-          through technology.
+          Innovative and results-driven Software Developer with a solid background in full-stack web development, data analysis, and 
+          UI/UX design. Passionate about building scalable applications and intuitive user experiences. Skilled in modern technologies 
+          including React.js, Node.js, Django, and Express.js, with experience delivering high-quality solutions. Proficient in data analysis 
+          and visualization, enabling data-driven decision-making. Adept at cross-functional collaboration, project management, and 
+          leveraging cloud computing to deploy reliable applications. 
         </p>
         <div className="btn-sci">
           <a

@@ -1,19 +1,50 @@
-/* Hero / Home Section */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  /* Prevent zoom gestures */
+  touch-action: manipulation;
+  -ms-content-zooming: none;
+}
+
+html,
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%; /* Prevent font zoom */
+  touch-action: manipulation;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ---------------- Hero / Home Section ---------------- */
 .home {
   display: flex;
   align-items: center;
-  margin-top: 100px;
   justify-content: space-between;
   gap: 50px;
   height: 100vh;
+  margin-top: 100px;
   padding: 60px 9% 0;
   color: white;
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.6s;
   flex-wrap: wrap;
-  overflow-x: hidden; /* prevent east-west scrolling */
+  overflow-x: hidden;
 }
 
+/* Info Section */
 .home-info {
   flex: 1;
   min-width: 280px;
@@ -31,19 +62,23 @@
   max-width: 100%;
 }
 
+/* Headings */
 .home-info h1 {
   font-size: clamp(28px, 4vw, 45px);
-  line-height: 1.2;
-  margin-bottom: 10px;
+  line-height: 1.3;
+  margin-bottom: 15px;
 }
 
 .home-info h2 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: clamp(20px, 3vw, 30px);
-  margin: 10px 0;
+  margin: 10px 0 20px;
   line-height: 1.4;
 }
 
+/* Animated job titles */
 .home-info h2 span {
   display: block;
   position: relative;
@@ -51,9 +86,8 @@
   -webkit-text-stroke: 1px rgb(53, 227, 53);
   animation: display-text 16s linear infinite;
   animation-delay: calc(-3s * var(--i));
-  margin-top: 5px;
+  margin-top: 18px; /* increased margin-top by 10px (was 8px) */
   max-width: 100%;
-  white-space: normal;
 }
 
 .home-info h2 span::before {
@@ -67,18 +101,21 @@
   animation: fill-text 4s linear infinite;
 }
 
+/* Paragraph */
 .home-info p {
   font-size: clamp(14px, 2vw, 16px);
   margin: 15px 0 25px;
-  line-height: 1.6;
+  line-height: 1.7;
   max-width: 100%;
+  text-align: justify;
 }
 
+/* Buttons + Social Icons */
 .home-info .btn-sci {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .btn {
@@ -91,6 +128,7 @@
   font-weight: 500;
   color: black;
   transition: 0.5s;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -116,6 +154,7 @@
   box-shadow: 0 0 10px rgb(73, 222, 73);
 }
 
+/* Image Section */
 .home-img {
   flex: 1;
   display: flex;
@@ -172,7 +211,7 @@
   mix-blend-mode: lighten;
 }
 
-/* Animations */
+/* ---------------- Animations ---------------- */
 @keyframes show-content {
   100% {
     visibility: visible;
@@ -201,7 +240,9 @@
   }
 }
 
-/* Responsive - Extra Large Screens (≥1400px) */
+/* ---------------- Responsive ---------------- */
+
+/* Extra Large Screens (≥1400px) */
 @media (min-width: 1400px) {
   .home-info h1 {
     font-size: 55px;
@@ -251,8 +292,8 @@
 /* Small Tablets & Large Phones (≤767px) */
 @media (max-width: 767px) {
   .home {
-    padding: 40px 5%;
-    gap: 20px;
+    padding: 50px 8%;
+    gap: 25px;
   }
 
   .home-info {
@@ -261,22 +302,26 @@
 
   .home-info h1 {
     font-size: 22px;
-    line-height: 1.2;
+    line-height: 1.4;
+    margin-bottom: 12px;
   }
 
   .home-info h2 {
-    font-size: 16px;
-    line-height: 1.3;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 
   .home-info p {
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 10px 0 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 12px 0 25px;
+    padding: 0 10px;
+    text-align: justify;
   }
 
   .btn {
-    padding: 8px 20px;
+    padding: 9px 22px;
     font-size: 14px;
   }
 
@@ -295,25 +340,32 @@
 /* Mobile Phones (≤576px) */
 @media (max-width: 576px) {
   .home {
-    padding: 30px 5%;
-    gap: 15px;
+    padding: 40px 6%;
+    gap: 20px;
   }
 
   .home-info h1 {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
   }
 
   .home-info h2 {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 
   .home-info p {
-    font-size: 12px;
-    margin: 8px 0 18px;
+    font-size: 13px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 10px 0 20px;
+    padding: 0 5px;
   }
 
   .btn {
-    padding: 6px 16px;
+    padding: 7px 18px;
     font-size: 13px;
   }
 
@@ -323,7 +375,7 @@
   }
 
   .home-img .img-box {
-    width: 60vw;
-    height: 60vw;
+    width: 65vw;
+    height: 65vw;
   }
 }

@@ -6,7 +6,7 @@
   align-items: center;
   padding: 0 5%;
   max-width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .contact-box {
@@ -17,7 +17,7 @@
   border-radius: 16px;
   color: white;
   border: 4px solid green;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 25px rgba(0, 255, 0, 0.25); /* soft green glow */
   word-break: break-word;
   white-space: normal;
 }
@@ -85,6 +85,7 @@ textarea {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.25); /* soft button shadow */
 }
 
 .contact-btn:hover {
@@ -121,17 +122,25 @@ textarea {
     font-size: 14px;
     height: 42px;
   }
+
+  .button-container {
+    gap: 10px;
+  }
 }
 
 /* Mobile Phones */
 @media (max-width: 576px) {
   .button-container {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row; /* keep buttons in one line */
+    justify-content: space-between;
+    gap: 8px;
   }
 
   .contact-btn {
-    width: 100%;
+    flex: 1;
+    min-width: 48%;
+    height: 40px;
+    font-size: 13px;
   }
 
   .contact-title {

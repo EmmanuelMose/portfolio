@@ -24,7 +24,9 @@ const Projects: React.FC = () => {
             <p className="project-desc">
               A hotel management system for managing rooms and ordering food.
             </p>
-            <button className="project-btn">View</button>
+            <a href="https://hotel-management-system-hazel.vercel.app/" target="_blank">
+              <button className="project-btn">View</button>
+            </a>
           </div>
 
           {/* MediLab Project */}
@@ -39,7 +41,9 @@ const Projects: React.FC = () => {
               A hospital management system for patients, nurses, doctors, and
               other staff.
             </p>
-            <button className="project-btn">View</button>
+            <a href="https://medilab-beige.vercel.app/" target="_blank">
+             <button className="project-btn">View</button>
+            </a>
           </div>
 
           {/* EventFastisha Project */}
@@ -53,7 +57,9 @@ const Projects: React.FC = () => {
             <p className="project-desc">
               A system for arranging events and booking rooms for events.
             </p>
-            <button className="project-btn">View</button>
+            <a href="" target="_blank">
+             <button className="project-btn">View</button>
+            </a>
           </div>
         </div>
 
