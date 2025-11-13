@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   touch-action: manipulation;
-  -ms-content-zooming: none; 
+  -ms-content-zooming: none;
   overscroll-behavior: contain;
 }
 
@@ -44,17 +44,22 @@ a {
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 10px;
-
-  /* Prevent zoom when double-tapping */
   touch-action: manipulation;
 }
 
+/* Logo styles */
 .navbar .logo {
   font-size: 20px;
-  font-weight: 2000;
+  font-weight: 700;
+  color: green;
+  transition: color 0.3s ease;
 }
 
+.navbar .logo:hover {
+  color: blue;
+}
 
+/* Menu styles */
 .navbar ul {
   display: flex;
   list-style: none;
@@ -67,13 +72,16 @@ a {
 .navbar ul li a {
   font-size: 15px;
   font-weight: 500;
-  transition: 0.3s;
+  color: white;
+  transition: color 0.3s ease;
 }
-.navbar ul li a .logo a:hover{
+
+/* Hover effect for nav links (except logo) */
+.navbar ul li a:hover {
   color: green;
 }
 
-.navbar ul li:hover a,
+/* Active link styling (optional) */
 .navbar ul li.active a {
   color: blue;
 }
