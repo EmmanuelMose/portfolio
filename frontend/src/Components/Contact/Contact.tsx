@@ -20,14 +20,15 @@ const Contact: React.FC = () => {
       return;
     }
 
-    const templateParams = {
-      email,
-      phone,
-      message,
-    };
+    const templateParams = { email, phone, message };
 
     emailjs
-      .send("service_pzddavb", "template_fom5bf2", templateParams, "w4I83mcpfdLzGzJVu")
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+      )
       .then(
         () => {
           alert("Message Sent Successfully!");
