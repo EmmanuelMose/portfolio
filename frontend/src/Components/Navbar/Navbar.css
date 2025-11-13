@@ -55,6 +55,9 @@ a {
   font-size: 20px;
   font-weight: 1000;
 }
+.navbar .logo a:hover{
+  color: green;
+}
 
 .navbar ul {
   display: flex;
