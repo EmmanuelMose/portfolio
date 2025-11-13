@@ -78,12 +78,12 @@ a {
 
 /* Hover effect for nav links (except logo) */
 .navbar ul li a:hover {
-  color: green;
+  color: blue;
 }
 
 /* Active link styling (optional) */
 .navbar ul li.active a {
-  color: blue;
+  color: green;
 }
 
 /* Menu Toggle */
