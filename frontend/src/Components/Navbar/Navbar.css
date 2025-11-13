@@ -40,7 +40,7 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 200;
-  background: #333;
+  background: #555;
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 10px;
@@ -50,13 +50,13 @@ a {
 /* Logo styles */
 .navbar .logo {
   font-size: 20px;
-  font-weight: 700;
-  color: green;
+  font-weight: 2000;
+  color: blue;
   transition: color 0.3s ease;
 }
 
 .navbar .logo:hover {
-  color: blue;
+  color: green;
 }
 
 /* Menu styles */
